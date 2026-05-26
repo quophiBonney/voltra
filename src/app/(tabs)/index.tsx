@@ -1,10 +1,10 @@
-import { StyleSheet, Text, View } from "react-native";
-
+import Banner from "@/components/ui/banner";
+import { StyleSheet } from "react-native";
 const HomeScreen = () => {
   return (
-    <View>
-      <Text>index</Text>
-    </View>
+    <>
+      <Banner />
+    </>
   );
 };
 

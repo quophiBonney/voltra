@@ -1,10 +1,11 @@
+import { useRouter } from "expo-router";
 import { Image, StyleSheet, View } from "react-native";
 import Onboarding from "react-native-onboarding-swiper";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 const OnboardingScreen = () => {
   const insets = useSafeAreaInsets();
-
+  const router = useRouter();
   return (
     <View
       style={[
@@ -14,8 +15,8 @@ const OnboardingScreen = () => {
     >
       <Onboarding
         bottomBarHeight={90 + insets.bottom}
-        onSkip={() => console.log("Skipped")}
-        onDone={() => console.log("Done")}
+        onSkip={() => router.push("/(tabs)")}
+        onDone={() => router.push("/(tabs)")}
         pages={[
           {
             backgroundColor: "#336DF6",
