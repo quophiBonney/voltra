@@ -247,8 +247,8 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 8 },
   },
   image: {
-    width: 220,
-    height: 220,
+    width: 200,
+    height: 200,
   },
   title: {
     fontSize: 26,

@@ -16,39 +16,44 @@ interface HeaderProps {
 export default function Header({ name }: HeaderProps) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{name}</Text>
-      <TouchableOpacity>
-        <Text>Need Help?</Text>
-      </TouchableOpacity>
+      <View style={styles.contentWrapper}>
+        <Text style={styles.title}>{name}</Text>
+        <TouchableOpacity>
+          <Text style={styles.help}>Need Help?</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
+    position: "fixed",
     backgroundColor: COLORS.primary,
-    borderRadius: 10,
-    paddingVertical: 10,
-    paddingHorizontal: 5,
+    paddingVertical: 15,
+    paddingHorizontal: 15,
     overflow: "hidden",
   },
-  scrollContent: {
+  contentWrapper: {
+    flexDirection: "row",
+    justifyContent: "space-between",
     alignItems: "center",
-  },
-  card: {
-    width: width - 40,
-    padding: 20,
-    justifyContent: "center",
+    marginTop: 20,
+    marginBottom: 15,
+    paddingHorizontal: 10,
   },
   title: {
     color: "#fff",
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: "900",
     marginBottom: 10,
   },
-  description: {
-    color: "#fff",
-    fontSize: 14,
-    lineHeight: 22,
+  help: {
+    backgroundColor: "#fff",
+    color: COLORS.primary,
+    padding: 10,
+    borderRadius: 8,
+    textAlign: "center",
+    fontWeight: 900,
   },
 });
