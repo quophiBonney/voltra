@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 
-const PowerScreen = () => {
+const power = () => {
   return (
     <View>
       <Text>power</Text>
@@ -8,6 +8,6 @@ const PowerScreen = () => {
   );
 };
 
-export default PowerScreen;
+export default power;
 
 const styles = StyleSheet.create({});

@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 
-const DocumentScreen = () => {
+const docs = () => {
   return (
     <View>
       <Text>docs</Text>
@@ -8,5 +8,5 @@ const DocumentScreen = () => {
   );
 };
 
-export default DocumentScreen;
+export default docs;
 const styles = StyleSheet.create({});

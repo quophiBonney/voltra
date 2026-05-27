@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 
-const SettingsScreen = () => {
+const settings = () => {
   return (
     <View>
       <Text>settings</Text>
@@ -8,6 +8,6 @@ const SettingsScreen = () => {
   );
 };
 
-export default SettingsScreen;
+export default settings;
 
 const styles = StyleSheet.create({});
