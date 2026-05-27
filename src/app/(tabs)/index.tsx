@@ -1,9 +1,9 @@
-import Banner from "@/components/ui/banner";
+import Header from "@/components/ui/header";
 import { StyleSheet } from "react-native";
 const HomeScreen = () => {
   return (
     <>
-      <Banner />
+      <Header name="Home" />
     </>
   );
 };
